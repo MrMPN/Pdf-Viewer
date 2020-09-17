@@ -327,8 +327,8 @@ class PdfViewerActivity : AppCompatActivity() {
         }
     }
 
-    override fun onStop() {
-        super.onStop()
+    override fun onDestroy() {
+        super.onDestroy()
         binding.pdfView.closePdfRender()
     }
 
